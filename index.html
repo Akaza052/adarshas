@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh A S | PHP MySQL Junior Developer</title>
+
+<style>
+:root {
+    --primary: #2563eb;
+    --secondary: #1e40af;
+    --dark: #1f2937;
+    --light: #f9fafb;
+    --gray: #6b7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ===== Animations ===== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    padding: 45px 25px;
+    border-radius: 14px;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #e0e7ff;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+/* ===== Sections ===== */
+section {
+    background: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-size: 22px;
+    color: var(--primary);
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+/* ===== Skills ===== */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.skill-box {
+    background: var(--light);
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Project ===== */
+.project {
+    background: var(--light);
+    padding: 20px;
+    border-left: 5px solid var(--primary);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project h3 {
+    margin-bottom: 8px;
+}
+
+/* ===== Strengths ===== */
+.strengths {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.strengths span {
+    background: #e0e7ff;
+    color: #1e40af;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.strengths span:hover {
+    transform: translateY(-4px);
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    margin: 35px 0 15px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Adarsh A S</h1>
+    <p>PHP MySQL Junior Developer / Trainee</p>
+    <p>Kakkoor, Ernakulam, Kerala, India</p>
+    <div class="links">
+        📞 9061262005 |
+        ✉️ <a href="mailto:adarshas2004rcb@gmail.com">Email</a> |
+        🔗 <a href="https://www.linkedin.com/in/adarsh-as-1650083a4/" target="_blank">LinkedIn</a> |
+        💻 <a href="https://github.com/adarshas2004" target="_blank">GitHub</a>
+    </div>
+</header>
+
+<section class="fade-up">
+    <h2>Career Objective</h2>
+    <p>
+        Motivated and detail-oriented fresher seeking a <strong>PHP MySQL Junior Developer / Trainee</strong> position
+        where I can apply my foundational knowledge of PHP, MySQL, and web technologies while gaining hands-on
+        experience through real-world projects and professional mentorship.
+    </p>
+</section>
+
+<section class="fade-up">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill-box"><strong>Languages</strong><br>PHP, Java, C++, HTML</div>
+        <div class="skill-box"><strong>Database</strong><br>MySQL</div>
+        <div class="skill-box"><strong>Web</strong><br>HTML, CSS, JavaScript</div>
+        <div class="skill-box"><strong>Concepts</strong><br>OOP, Data Structures</div>
+        <div class="skill-box"><strong>Tools</strong><br>Git, GitHub, VS Code</div>
+        <div class="skill-box"><strong>Platform</strong><br>Linux</div>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Project</h2>
+    <div class="project">
+        <h3>Online Bookstore</h3>
+        <ul>
+            <li>Developed PHP-MySQL based purchasing system</li>
+            <li>Responsive UI using HTML & CSS</li>
+            <li>Implemented CRUD operations</li>
+            <li>Version control with Git & GitHub</li>
+        </ul>
+        <p>
+            🔗 <a href="https://github.com/adarshas2004" target="_blank">View on GitHub</a>
+        </p>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Education</h2>
+    <p>
+        <strong>Bachelor of Computer Applications (BCA)</strong><br>
+        MG University, Kottayam<br>
+        <span style="color:var(--gray)">2023 – 2026</span>
+    </p>
+</section>
+
+<section class="fade-up">
+    <h2>Key Strengths</h2>
+    <div class="strengths">
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+        <span>Communication</span>
+        <span>Adaptability</span>
+        <span>Quick Learner</span>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Declaration</h2>
+    <p>
+        I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.
+    </p>
+</section>
+
+<footer>
+    © 2026 Adarsh A S | PHP MySQL Junior Developer
+</footer>
+
+</div>
+
+<script>
+const sections = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
